@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #f8f8ff;
+}
+a, a:active, a:link, a::before, a::after {
+    color: #000000;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}

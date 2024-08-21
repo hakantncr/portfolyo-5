@@ -1,10 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ana Sayfa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <title>Todec | Mobilya ve Dekorasyon</title>
 </head>
 <body>
+
+    <div class="logo-bar target">
+        <div class="row">
+            <div class="col-12">
+                <a href=""> <img src="public/img/KÜÇÜK%201.png" alt=""> </a>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <nav class="navbar target">
+            <ul class="links target">
+                <li><a class="btn btn-dark" href=""><strong>Ana Sayfa</strong></a></li>
+                <li><a class="btn font-weight-bold" href="">Hakkımızda</a></li>
+                <li><a class="btn font-weight-bold" href="">Iletisim</a></li>
+                <li><a class="btn font-weight-bold" href="">Ürünler</a></li>
+                <li><a class="btn font-weight-bold" href="">Modern Puf Modelleri</a></li>
+                <li><a class="btn font-weight-bold" href="">Organizer</a></li>
+            </ul>
+            <div class="box border-bottom">
+                <input type="text" placeholder="Aradığınız ürün...">
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="dropdown_menu">
+            <li><a class="dropdown_menu-a" href="">Ana Sayfa</a></li>
+            <li><a class="dropdown_menu-a" href="">Hakkımızda</a></li>
+            <li><a class="dropdown_menu-a" href="">İletişim</a></li>
+            <li><a class="dropdown_menu-a" href="">Tarifler</a></li>
+        </div>
+    </header>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 item-1">
+                    <h1 class="display-4">Şehrin Ritmini Yakala!</h1>
+                    <p>Lorem ipsum dolor sit amet, in inventore laborum natus neque, perspiciatis! Aspernatur consequuntur nobis reprehenderit.</p>
+                    <a href="#" class="btn btn-outline-dark shadow">Hemen İnceleyin!</a>
+                </div>
+                <div class="col-sm-6">
+                    <img class="w-100" src="public/img/mid-century-modern-living-room-interior-design-with-monstera-tree.png" alt="">
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 item-1">
+                <h1 class="display-4">Şehrin Ritmini Yakala!</h1>
+                <p>Lorem ipsum dolor sit amet, in inventore laborum natus neque, perspiciatis! Aspernatur consequuntur nobis reprehenderit.</p>
+                <a href="#" class="btn btn-outline-dark shadow">Hemen İnceleyin!</a>
+            </div>
+            <div class="col-sm-6">
+                <img class="w-100" src="public/img/mid-century-modern-living-room-interior-design-with-monstera-tree.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 item-1">
+                <h1 class="display-4">Şehrin Ritmini Yakala!</h1>
+                <p>Lorem ipsum dolor sit amet, in inventore laborum natus neque, perspiciatis! Aspernatur consequuntur nobis reprehenderit.</p>
+                <a href="#" class="btn btn-outline-dark shadow">Hemen İnceleyin!</a>
+            </div>
+            <div class="col-sm-6">
+                <img class="w-100" src="public/img/mid-century-modern-living-room-interior-design-with-monstera-tree.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 item-1">
+                <h1 class="display-4">Şehrin Ritmini Yakala!</h1>
+                <p>Lorem ipsum dolor sit amet, in inventore laborum natus neque, perspiciatis! Aspernatur consequuntur nobis reprehenderit.</p>
+                <a href="#" class="btn btn-outline-dark shadow">Hemen İnceleyin!</a>
+            </div>
+            <div class="col-sm-6">
+                <img class="w-100" src="public/img/mid-century-modern-living-room-interior-design-with-monstera-tree.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    </script>
+
+    <script src="public/js/index.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
