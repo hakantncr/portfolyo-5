@@ -1,8 +1,10 @@
 .links a {
+    letter-spacing: 1px;
+    font-size: 15px;
     color: var(--secondary);
-    padding-top: 0.5rem;
-    font-weight: bolder;
-    font-family: Sawasdee;
+    padding-top: 1rem;
+    font-family: "Poppins", sans-serif thin;
+    font-weight: 500;
 }
 .logo-bar a {
     text-decoration: none;
@@ -11,12 +13,23 @@
     color: var(--secondary);
     font-family: 'Montserrat', sans-serif;
 }
+section {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 1200px;
+    height: 700px;
+}
+.home-img {
+    width: 1200px;
+    height: 700px;
+}
 
 .logo-bar {
     align-items: center;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 header {
     opacity: 1;
@@ -139,7 +152,6 @@ header nav a {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .box {
-    border-bottom: #000;
     height: 30px;
     display: flex;
     cursor: pointer;
