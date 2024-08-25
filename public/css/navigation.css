@@ -1,22 +1,23 @@
 .links a {
     letter-spacing: 1px;
-    font-size: 15px;
-    color: var(--secondary);
+    font-size: 13px;
+    color: #000;
     padding-top: 1rem;
-    font-family: "Poppins", sans-serif thin;
-    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
 }
 .logo-bar a {
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 25px;
-    color: var(--secondary);
-    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-family: 'josefin sans', sans-serif;
 }
 section {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    text-align: center;
     width: 1200px;
     height: 700px;
 }
@@ -70,14 +71,14 @@ header nav a {
     cursor: pointer;
     display: none;
 }
-.btn {
+.btn-nav {
     opacity: 1;
-    transition: all 0.4s;
+    transition: all 0.3s;
     transform: scale(1);
 }
-.btn:hover {
-    color: var(--secondary);
-    opacity: 0.8;
+.btn-nav:hover {
+    color: #000;
+    opacity: 0.9;
     transform: scale(1.1);
 }
 /* DROPDOWN MENU */
@@ -156,7 +157,7 @@ header nav a {
     display: flex;
     cursor: pointer;
     padding: 10px 10px;
-    background: #f8f8ff;
+    background: #fff;
     border-radius: 30px;
     align-items: center;
 }
