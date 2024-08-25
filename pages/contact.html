@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>İletişim | Todec</title>
+</head>
+<body>
+
+    <div class="logo-bar target">
+        <div>
+            <a href="">
+                <img src="../public/img/KÜÇÜK%201.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar target border-top">
+            <ul class="links target">
+                <li><a class="btn btn-nav" href="../index.html">Ana Sayfa</a></li>
+                <li><a class="btn btn-nav" href="">Modern Puf Modelleri</a></li>
+                <li><a class="btn btn-nav" href="">Organizer</a></li>
+                <li><a class="btn btn-nav" href="">Ürünler</a></li>
+                <li><a class="btn btn-nav" href="">Hakkımızda</a></li>
+                <li><a class="btn btn-nav" href="../pages/contact.html">İletişim</a></li>
+            </ul>
+            <div class="box border-bottom">
+                <input type="text" placeholder="Aradığınız ürünü yazınız...">
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="dropdown_menu">
+            <li><a class="dropdown_menu-a" href="">Ana Sayfa</a></li>
+            <li><a class="dropdown_menu-a" href="">Modern Puf Modelleri</a></li>
+            <li><a class="dropdown_menu-a" href="">Organizer</a></li>
+            <li><a class="dropdown_menu-a" href="">Ürünler</a></li>
+            <li><a class="dropdown_menu-a" href="">Hakkımızda</a></li>
+            <li><a class="dropdown_menu-a" href="">İletişim</a></li>
+        </div>
+    </header>
+
+
+    <div class="contact-header">
+        <div class="row">
+            <div class="col-6">
+                <h1>
+                    Sıkça Sorulan Sorular
+                </h1>
+            </div>
+            <div class="col-6">2</div>
+        </div>
+    </div>
+
+
+
+    <div class="contact">
+        <div class="row">
+            <div class="col-6">
+                <ul class="accordion">
+                    <li>
+                        <input type="radio" name="accordion" id="first" checked>
+                        <label for="first">Teslimat Süresi</label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate facilis pariatur perspiciatis quisquam unde. Cupiditate enim esse facere fugit incidunt laborum optio quam tenetur velit? Explicabo natus nostrum odio sed.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="second">
+                        <label for="second">İade İşlemleri</label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate facilis pariatur perspiciatis quisquam unde. Cupiditate enim esse facere fugit incidunt laborum optio quam tenetur velit? Explicabo natus nostrum odio sed.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="third">
+                        <label for="third">Kargo Firması</label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate facilis pariatur perspiciatis quisquam unde. Cupiditate enim esse facere fugit incidunt laborum optio quam tenetur velit? Explicabo natus nostrum odio sed.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="fourth">
+                        <label for="fourth">İade İşlemleri</label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate facilis pariatur perspiciatis quisquam unde. Cupiditate enim esse facere fugit incidunt laborum optio quam tenetur velit? Explicabo natus nostrum odio sed.</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+
+            </div>
+            <div class="col-6">sağ</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <script src="../public/js/index.js"></script>
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

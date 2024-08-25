@@ -1,5 +1,4 @@
 .links a {
-    letter-spacing: 1px;
     font-size: 14px;
     color: #000;
     padding-top: 1.5rem;
@@ -34,9 +33,9 @@
     padding-bottom: 2rem;
 }
 header {
-    background-color: #fff;
+    position: relative;
     opacity: 1;
-    z-index: 10000;
+    z-index: 100000;
     top: 0;
     padding-bottom: 0.5rem;
     transition: background-color 0.5s ease-in-out;
@@ -73,6 +72,7 @@ header nav a {
     display: none;
 }
 .btn-nav {
+    color: #000;
     background: #fff;
     position: relative;
     display: flex;
@@ -84,27 +84,27 @@ header nav a {
 /* DROPDOWN MENU */
 .dropdown_menu {
     display: none;
-    position: absolute;
+    position: sticky;
     right: 2rem;
-    top: 90px;
+    top: 0;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.51);
+    background: #fefefe;
     backdrop-filter: blur(15px);
-    border-radius: 10px;
+    border-radius: 1px;
     overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0, 0.2, 1);
+    transition: all 0.5s ease;
 }
 .dropdown_menu.open {
-    height: 250px;
+    height: 300px;
 }
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 0.8rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .dropdown_menu a {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 .dropdown_menu-a {
@@ -113,7 +113,7 @@ header nav a {
 }
 .dropdown_menu-a:hover {
     color: black;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .dropdown_menu .action_btn {
     width: 100%;
