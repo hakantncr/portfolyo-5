@@ -8,6 +8,7 @@
     width: 290px;
     border-radius: 3px;
 }
+
 .container h4 {
     color: #000;
     font-family: 'Montserrat', sans-serif;
@@ -48,7 +49,7 @@
     text-transform: uppercase;
     padding: 9px 30px;
     letter-spacing: 0.4px;
-    background: #e86f08;
+    background: #1c1c1c;
     border: 1px solid #cfcbcb;
     text-decoration: none;
     z-index: 1;
@@ -69,12 +70,12 @@
     background: #fff;
     z-index: -1;
     transform-origin: left;
-    transition: transform 0.7s ease;
+    transition: transform 0.8s ease;
     transform: scaleX(1);
 }
 .product-a:hover::before {
     transform-origin: right;
-    transition: transform 0.7s ease;
+    transition: transform 0.8s ease;
     transform: scaleX(0);
 }
 /* Title */
