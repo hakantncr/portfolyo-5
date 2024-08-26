@@ -1,61 +1,80 @@
+.shadow {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+/* Accordion */
 .accordion {
-    margin: 60px auto;
-    width: 600px;
+    margin: 40px auto;
+}
+.accordion-bg {
+    /*border: 1px solid #cfcfcf;*/
+    border-radius: 10px;
+    margin-top: 2rem;
+    background: #fff;
+}
+.content {
+    font-size: 13px;
+    color: #4f4f4f;
+    font-weight: 400;
 }
 .accordion li {
     border: 1px solid #cfcfcf;
     list-style: none;
-    width: 100%;
     margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    padding: 7px;
+    border-radius: 5px;
 }
 .accordion li label {
+    color: #000;
     display: flex;
     align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
 }
 label::before {
-    content: '+';
+    content: '*';
     margin-right: 10px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: lighter;
 }
 input[type="radio"] {
     display: none;
 }
 .accordion .content {
-    color: #555;
+    color: #363636;
     padding: 0 10px;
-    line-height: 26px;
+    line-height: 25px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s, padding 0.3s;
 }
 .accordion input[type="radio"]:checked + label + .content {
     max-height: 400px;
-    padding: 10px 10px 20px;
+    padding: 10px 10px 10px;
 }
 .accordion input[type="radio"]:checked + label::before {
     content: '-';
 }
-.contact-header {
+.title-1 {
     text-align: center;
-    align-items: center;
-    padding-top: 7rem;
+    color: #000;
+    font-size: 32px;
+    font-weight: 400;
 }
-.contact-header h1 {
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+.container .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-
+.container .contact .boxes {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
 
 
 

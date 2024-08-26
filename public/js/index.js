@@ -1,7 +1,7 @@
 const targets = document.querySelectorAll('.target')
 
 const options = {
-    threshold: 0.2
+    threshold: 0.1
 }
 
 const callBack = (entries) => {
